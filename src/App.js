@@ -1,4 +1,5 @@
 import './App.css';
+
 import { HomeReact } from './templates/homeReact';
 
 function App() {

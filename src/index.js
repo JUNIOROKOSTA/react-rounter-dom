@@ -4,15 +4,17 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Route1 } from './templates/Route1';
+import { Menu } from './components/Menu';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <Menu />
       <Switch>
-        <Route>
-          <App />
-        </Route>
+        <Route path={'/'} component={App} exact />
+        <Route path={'/rota1'} component={Route1} exact />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,
